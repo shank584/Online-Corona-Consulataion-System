@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TeatDoctorRepository" project="DoctorModule" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.demo.repository.TeatDoctorRepository" time="0.507" displayname="TeatDoctorRepository" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.repository.TeatDoctorRepository]">
+    <testcase name="testSavDoctor" classname="com.example.demo.repository.TeatDoctorRepository" time="0.507" displayname="testSavDoctor()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.repository.TeatDoctorRepository]/[method:testSavDoctor()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,63 @@
+package com.example.demo.repository;
+
+import java.util.List;
+
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.demo.entity.Doctor;
+import com.example.demo.entity.Patient;
+
+import lombok.extern.slf4j.Slf4j;
+
+@SpringBootTest
+@Slf4j
+@TestMethodOrder(OrderAnnotation.class)
+public class TeatDoctorRepository {
+
+	@Autowired
+	private DoctorRepository drepo;
+	
+	@Test
+	public void testSavDoctor() {
+		
+		Patient p1 = new Patient();
+		p1.setPatient_name("xyz");
+		
+		Patient p2 = new Patient();
+		p2.setPatient_name("pqr");
+		
+		
+		
+		Doctor d= new Doctor();
+		d.setDoc_name("abc");
+		d.setDoc_phone("7709997372");
+		d.setDoc_city("kwd");
+		d.setDoc_gender("male");
+		d.setDoc_department("brain");
+		d.setDoc_mail("abc@gmail.com");
+		
+		d.setPatients(List.of(p1));
+		d.setPatients(List.of(p2));
+		
+		Doctor saveD= drepo.save(d);
+		System.out.println(d);
+		Assertions.assertThat(saveD).isNotNull();
+	}
+	@Test
+	@Order(2)
+	public void testGetAllEmployees()
+	{
+		List<Doctor> allDoctor=(List<Doctor>)drepo.findAll();
+		System.out.println("All Doctor:"+allDoctor);
+		Assertions.assertThat(allDoctor).isNotNull();
+	}
+	
+	
+	
+}

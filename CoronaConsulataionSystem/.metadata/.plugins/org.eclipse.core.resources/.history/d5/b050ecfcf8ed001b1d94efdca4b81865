@@ -1,0 +1,14 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import com.example.demo.entity.Doctor;
+
+public interface IDoctorService {
+
+	public Doctor addDoctor(Doctor doctor) ;
+	public List<Doctor>getAllDoctor();
+	public Doctor getDoctorWithId(Integer doc_id);
+	public Doctor getDoctorupdate(Integer doc_id);
+	public void deleteDoctor(Integer doc_id)
+}

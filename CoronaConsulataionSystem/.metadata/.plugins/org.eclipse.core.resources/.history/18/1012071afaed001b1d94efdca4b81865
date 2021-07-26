@@ -1,0 +1,43 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import com.example.demo.entity.Doctor;
+import com.example.demo.exception.myDoctorException;
+import com.example.demo.repository.DoctorRepository;
+
+public class DoctorService implements IDoctorService {
+	
+	private DoctorRepository drepo;
+
+	@Override
+	public Doctor addDoctor(Doctor doctor) throws myDoctorException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Doctor> getAllDoctor() throws myDoctorException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Doctor getDoctorWithId(Integer doc_id) throws myDoctorException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Doctor getDoctorupdate(Doctor doctor) throws myDoctorException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteDoctor(Integer doc_id) throws myDoctorException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

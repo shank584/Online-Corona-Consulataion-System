@@ -1,0 +1,5 @@
+spring.datasource.url=jdbc:postgresql://localhost:5432/cms
+spring.datasource.username=postgres
+spring.datasource.password=shaikh1998
+spring.jpa.hibernate.show_sql=true
+spring.jpa.hibernate.hbm2ddl.auto=update

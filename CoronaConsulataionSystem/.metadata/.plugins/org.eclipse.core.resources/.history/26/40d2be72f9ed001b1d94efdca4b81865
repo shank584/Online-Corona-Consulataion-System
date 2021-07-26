@@ -1,0 +1,15 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import com.example.demo.entity.Doctor;
+import com.example.demo.exception.myException;
+
+public interface IDoctorService {
+
+	public Doctor addDoctor(Doctor doctor) throws myDoctorException;
+	public List<Doctor>getAllDoctor();
+	public Doctor getDoctorWithId(Integer doc_id);
+	public Doctor getDoctorupdate(Doctor doctor);
+	public void deleteDoctor(Integer doc_id);
+}

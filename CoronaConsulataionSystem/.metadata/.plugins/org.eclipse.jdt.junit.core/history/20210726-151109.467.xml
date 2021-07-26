@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun TeatDoctorRepository" project="DoctorModule" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.demo.repository.TeatDoctorRepository" time="0.63" displayname="TeatDoctorRepository" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.repository.TeatDoctorRepository]">
+    <testcase name="testGetAllDoctor" classname="com.example.demo.repository.TeatDoctorRepository" time="0.579" displayname="testGetAllDoctor()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.repository.TeatDoctorRepository]/[method:testGetAllDoctor()]"/>
+    <testcase name="testSavDoctor" classname="com.example.demo.repository.TeatDoctorRepository" time="0.051" displayname="testSavDoctor()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.repository.TeatDoctorRepository]/[method:testSavDoctor()]"/>
+  </testsuite>
+</testrun>
