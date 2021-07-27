@@ -26,22 +26,22 @@ public class Doctor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer doc_Id;
+	private Integer docId;
 	@Column
-	private String doc_Name;
+	private String docName;
 	@Column
-	private String doc_Department;
+	private String docDepartment;
 	@Column
-	private String doc_Phone;
+	private String docPhone;
 	@Column
-	private String doc_Gender;
+	private String docGender;
 	@Column
-	private String doc_City;
+	private String docCity;
 	@Column
-	private String doc_Mail;
+	private String docMail;
 	
 	@OneToMany(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
-	@JoinColumn(name="doc_id", referencedColumnName = "doc_id")
+	@JoinColumn(name="docId", referencedColumnName = "docId")
 	List<Patient> patients;
 
 }

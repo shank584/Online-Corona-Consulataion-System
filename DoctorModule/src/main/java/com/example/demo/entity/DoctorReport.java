@@ -20,27 +20,27 @@ public class DoctorReport{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer report_Id;
+	private Integer reportId;
 	
 	@Column
-	private Integer doc_Id;
+	private Integer docId;
 	
 	@Column
-	private Integer patient_Id;
+	private Integer patientId;
 	
 	@Column
-	private String doc_Name;
+	private String docName;
 	
 	@Column
-	private String patient_Name;
+	private String patientName;
 	
 	@Column
-	private String patient_Prescrition;
+	private String patientPrescrition;
 	
 	@Column
-	private String medicine_To_Patient;
+	private String medicineToPatient;
 	
 	@Column
-	private Double doc_Fees;
+	private Double docFees;
 	
 }

@@ -21,12 +21,12 @@ public class Patient {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private  Integer patient_Id;
+	private  Integer patientId;
 	
 	@Column
-	private String patient_Name;
+	private String patientName;
 	
 	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "doc_id", referencedColumnName = "doc_id")
+	@JoinColumn(name = "docId", referencedColumnName = "docId")
 	private Doctor doctor;
 }
